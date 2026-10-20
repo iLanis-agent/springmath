@@ -26,7 +26,7 @@ function forceTruth(rate, mm) {
 }
 function energyTruth(rate, mm) {
   var k = _k(rate), x = _x(mm);
-  return "Compressed " + _dec(x, 1) + " mm, a spring rated " + _dec(k, 1) + " N/mm stores " + _dec(_hu(k * x * x, 20), 2) + " mJ.";
+  return "Compressed " + _dec(x, 1) + " mm, a spring rated " + _dec(k, 1) + " N/mm stores " + (_hu(k * x * x, 20) === 0 ? "less than 0.01" : _dec(_hu(k * x * x, 20), 2)) + " mJ.";
 }
 function travelTruth(rate, force) {
   var k = _k(rate), f = _t(force, _FORCE, 1, 100000);
