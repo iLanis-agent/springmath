@@ -29,7 +29,8 @@ def energy(a, b):
         x0, x1 = x * i / n, x * (i + 1) / n
         area += (k * x0 + k * x1) / 2 * (x1 - x0)
     assert area == k * x * x / 2
-    return f"Compressed {txt(x,1)} mm, a spring rated {txt(k,1)} N/mm stores {"less than 0.01" if txt(area, 2) == "0" else txt(area, 2)} mJ."
+    shown = "less than 0.01" if txt(area, 2) == "0" else txt(area, 2)
+    return f"Compressed {txt(x,1)} mm, a spring rated {txt(k,1)} N/mm stores {shown} mJ."
 def travel(a, b):
     k = k_(a); f = dec(b, FORCE, "0.1", "10000")
     x = f / k
