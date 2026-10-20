@@ -1,6 +1,6 @@
 [
 {"fn":"forceTruth","args":["0.1","0.1"],"expected":"A spring rated 0.1 N/mm pushes back with 0.01 N when it is compressed 0.1 mm."},
-{"fn":"energyTruth","args":["0.1","0.1"],"expected":"Compressed 0.1 mm, a spring rated 0.1 N/mm stores 0 mJ."},
+{"fn":"energyTruth","args":["0.1","0.1"],"expected":"Compressed 0.1 mm, a spring rated 0.1 N/mm stores less than 0.01 mJ."},
 {"fn":"forceTruth","args":["0.1","12"],"expected":"A spring rated 0.1 N/mm pushes back with 1.2 N when it is compressed 12 mm."},
 {"fn":"energyTruth","args":["0.1","12"],"expected":"Compressed 12 mm, a spring rated 0.1 N/mm stores 7.2 mJ."},
 {"fn":"forceTruth","args":["0.1","50"],"expected":"A spring rated 0.1 N/mm pushes back with 5 N when it is compressed 50 mm."},
@@ -169,7 +169,7 @@
 {"fn":"pairTruth","args":["33.3","1000"],"expected":"Two springs rated 33.3 and 1000 N/mm add up to 1033.3 N/mm side by side, and give 32.23 N/mm end to end."},
 {"fn":"pairTruth","args":["33.3","7.7"],"expected":"Two springs rated 33.3 and 7.7 N/mm add up to 41 N/mm side by side, and give 6.25 N/mm end to end."},
 {"fn":"forceTruth","args":["0.1","0.1"],"expected":"A spring rated 0.1 N/mm pushes back with 0.01 N when it is compressed 0.1 mm."},
-{"fn":"energyTruth","args":["0.1","0.1"],"expected":"Compressed 0.1 mm, a spring rated 0.1 N/mm stores 0 mJ."},
+{"fn":"energyTruth","args":["0.1","0.1"],"expected":"Compressed 0.1 mm, a spring rated 0.1 N/mm stores less than 0.01 mJ."},
 {"fn":"forceTruth","args":["0.3","0.3"],"expected":"A spring rated 0.3 N/mm pushes back with 0.09 N when it is compressed 0.3 mm."},
 {"fn":"energyTruth","args":["0.3","0.3"],"expected":"Compressed 0.3 mm, a spring rated 0.3 N/mm stores 0.01 mJ."},
 {"fn":"forceTruth","args":["1","0.1"],"expected":"A spring rated 1 N/mm pushes back with 0.1 N when it is compressed 0.1 mm."},
